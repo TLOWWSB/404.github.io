@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('bg2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .navbar {
+            width: 100%;
+            overflow: hidden;
+        }
+        .navbar img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .buttons {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 22px 44px;
+            margin: 0 30px;
+            background-color: #df332e;
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            font-size: 26px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #df332e;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="navbar.png" alt="Navigation Bar">
+    </div>
+    <div class="content">
+        <img src="404.png" alt="404 - Page Not Found">
+        <div class="buttons">
+            <a href="https://www.mandai.com/en/singapore-zoo.html" class="button">Back to the zoo!</a>
+            <a href="page 1.html" class="button">Tell me more!</a>
+        </div>
+    </div>
+</body>
+</html>

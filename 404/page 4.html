@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 1;
+        }
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .button {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="page 4.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <img src="can you identify.png" alt="Overlay" class="overlay-image" usemap="#image-map">
+            <map name="image-map">
+                <area shape="circle" coords="1200,168,117" onclick="alert('1. A durian tree was planted at her grave  2. A bronze statue!  3. The next orangutan born at the Singapore Zoo would be named Ah Meng')">
+            </map>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="page 3.html" class="button">Previous page</a>
+        <a href="page 5.html" class="button">Next page</a>
+    </div>
+</body>
+</html>

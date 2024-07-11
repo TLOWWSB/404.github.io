@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 5</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .top-button-container {
+            position: fixed;
+            top: 4cm; /* Moved lower from 3cm to 4cm */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+        .top-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted playsinline>
+            <source src="page 5.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="top-button-container">
+        <a href="https://www.mandai.com/en/singapore-zoo.html" class="top-button">I want to see the Orangutans now!</a>
+    </div>
+</body>
+</html>
